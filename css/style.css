@@ -1,0 +1,59 @@
+
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(300px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+}
+
+nav #navbar {
+	grid-area: navbar;
+	position: fixed;
+}
+
+#nav header h1{
+	font-size: 50px;
+	text-align: center;
+	margin-top: 25px;
+}
+#navbar ul li{
+	list-style: none;
+	text-decoration: none;
+	justify-content: center;
+}
+nav#navbar a {
+	display: block;	
+	padding: 15px 15px;
+	text-decoration: none;
+	color: black;
+	
+}
+nav#navbar a:hover{
+	background-color: wheat;
+	padding: 15px 15px;
+	border-radius: 15px;
+}
+
+
+main#main-doc {
+	grid-area: mainContent;
+}
+
+#content{
+	padding: 25px;
+}
+
+code {
+	background-color: #CCC;
+	display: block;
+	color: blueviolet;
+}
+
+table tr{
+	padding: 5px 5px;
+	border: 2px solid black;
+}
+table td{
+	padding: 5px 5px;
+	border: 2px solid black;
+}
